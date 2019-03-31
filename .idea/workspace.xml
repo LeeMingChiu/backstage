@@ -1,177 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0765914f-dee8-47fd-8612-2452edc258af" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/LICENSE" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/build/build.js" afterPath="$PROJECT_DIR$/build/build.js" />
-      <change beforePath="$PROJECT_DIR$/build/check-versions.js" afterPath="$PROJECT_DIR$/build/check-versions.js" />
-      <change beforePath="$PROJECT_DIR$/build/logo.png" afterPath="$PROJECT_DIR$/build/logo.png" />
-      <change beforePath="$PROJECT_DIR$/build/utils.js" afterPath="$PROJECT_DIR$/build/utils.js" />
-      <change beforePath="$PROJECT_DIR$/build/vue-loader.conf.js" afterPath="$PROJECT_DIR$/build/vue-loader.conf.js" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.base.conf.js" afterPath="$PROJECT_DIR$/build/webpack.base.conf.js" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.dev.conf.js" afterPath="$PROJECT_DIR$/build/webpack.dev.conf.js" />
-      <change beforePath="$PROJECT_DIR$/build/webpack.prod.conf.js" afterPath="$PROJECT_DIR$/build/webpack.prod.conf.js" />
-      <change beforePath="$PROJECT_DIR$/config/dev.env.js" afterPath="$PROJECT_DIR$/config/dev.env.js" />
-      <change beforePath="$PROJECT_DIR$/config/index.js" afterPath="$PROJECT_DIR$/config/index.js" />
-      <change beforePath="$PROJECT_DIR$/config/prod.env.js" afterPath="$PROJECT_DIR$/config/prod.env.js" />
-      <change beforePath="$PROJECT_DIR$/config/test.env.js" afterPath="$PROJECT_DIR$/config/test.env.js" />
-      <change beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" afterPath="$PROJECT_DIR$/package-lock.json" />
-      <change beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change beforePath="$PROJECT_DIR$/src/App.vue" afterPath="$PROJECT_DIR$/src/App.vue" />
-      <change beforePath="$PROJECT_DIR$/src/assets/logo.png" afterPath="$PROJECT_DIR$/src/assets/logo.png" />
-      <change beforePath="$PROJECT_DIR$/src/components/ClearRedis.vue" afterPath="$PROJECT_DIR$/src/components/ClearRedis.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Clock/Clock.vue" afterPath="$PROJECT_DIR$/src/components/Clock/Clock.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Clock/ClockManagement.vue" afterPath="$PROJECT_DIR$/src/components/Clock/ClockManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Clock/ClockSwitch.vue" afterPath="$PROJECT_DIR$/src/components/Clock/ClockSwitch.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Constraint/Constraint.vue" afterPath="$PROJECT_DIR$/src/components/Constraint/Constraint.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Constraint/ConstraintManagement.vue" afterPath="$PROJECT_DIR$/src/components/Constraint/ConstraintManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Constraint/ConstraintRule.vue" afterPath="$PROJECT_DIR$/src/components/Constraint/ConstraintRule.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Coupon/Coupon.vue" afterPath="$PROJECT_DIR$/src/components/Coupon/Coupon.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Coupon/CouponCard.vue" afterPath="$PROJECT_DIR$/src/components/Coupon/CouponCard.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Coupon/CouponPool.vue" afterPath="$PROJECT_DIR$/src/components/Coupon/CouponPool.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Coupon/CouponQRCode.vue" afterPath="$PROJECT_DIR$/src/components/Coupon/CouponQRCode.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/HelloWorld.vue" afterPath="$PROJECT_DIR$/src/components/HelloWorld.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Home.vue" afterPath="$PROJECT_DIR$/src/components/Home.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Index.vue" afterPath="$PROJECT_DIR$/src/components/Index.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Interface.vue" afterPath="$PROJECT_DIR$/src/components/Interface.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/Log.vue" afterPath="$PROJECT_DIR$/src/components/Log/Log.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogAllowance.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogAllowance.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogCoupon.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogCoupon.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogHandle.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogHandle.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogMail.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogMail.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogNew.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogNew.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogStar.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogStar.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogVIp.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogVIp.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Log/LogYunZuan.vue" afterPath="$PROJECT_DIR$/src/components/Log/LogYunZuan.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.vue" afterPath="$PROJECT_DIR$/src/components/Login.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/Prize.vue" afterPath="$PROJECT_DIR$/src/components/Prize/Prize.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizeCompensate.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizeCompensate.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizeCount.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizeCount.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizePool.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizePool.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizePoolBackup.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizePoolBackup.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizeReal.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizeReal.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizeRecord.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizeRecord.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Prize/PrizeType.vue" afterPath="$PROJECT_DIR$/src/components/Prize/PrizeType.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/ProjectManagement.vue" afterPath="$PROJECT_DIR$/src/components/ProjectManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Register.vue" afterPath="$PROJECT_DIR$/src/components/Register.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/SceneManagement.vue" afterPath="$PROJECT_DIR$/src/components/SceneManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sign/Sign.vue" afterPath="$PROJECT_DIR$/src/components/Sign/Sign.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sign/SignManagement.vue" afterPath="$PROJECT_DIR$/src/components/Sign/SignManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sign/SignTiming.vue" afterPath="$PROJECT_DIR$/src/components/Sign/SignTiming.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/SystemManagement.vue" afterPath="$PROJECT_DIR$/src/components/SystemManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/Task.vue" afterPath="$PROJECT_DIR$/src/components/Task/Task.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/TaskCount.vue" afterPath="$PROJECT_DIR$/src/components/Task/TaskCount.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/TaskManagement.vue" afterPath="$PROJECT_DIR$/src/components/Task/TaskManagement.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/TaskPromotion.vue" afterPath="$PROJECT_DIR$/src/components/Task/TaskPromotion.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/TaskRecord.vue" afterPath="$PROJECT_DIR$/src/components/Task/TaskRecord.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/TaskRule.vue" afterPath="$PROJECT_DIR$/src/components/Task/TaskRule.vue" />
-      <change beforePath="$PROJECT_DIR$/src/components/Task/TaskVip.vue" afterPath="$PROJECT_DIR$/src/components/Task/TaskVip.vue" />
-      <change beforePath="$PROJECT_DIR$/src/libs/API.js" afterPath="$PROJECT_DIR$/src/libs/API.js" />
-      <change beforePath="$PROJECT_DIR$/src/libs/jquery.min.js" afterPath="$PROJECT_DIR$/src/libs/jquery.min.js" />
-      <change beforePath="$PROJECT_DIR$/src/libs/utils.js" afterPath="$PROJECT_DIR$/src/libs/utils.js" />
-      <change beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
-      <change beforePath="$PROJECT_DIR$/static/.gitkeep" afterPath="$PROJECT_DIR$/static/.gitkeep" />
-      <change beforePath="$PROJECT_DIR$/static/img/PLogo.png" afterPath="$PROJECT_DIR$/static/img/PLogo.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/allowance_log.png" afterPath="$PROJECT_DIR$/static/img/icon/allowance_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/allowance_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/allowance_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/card_pass_coupon.png" afterPath="$PROJECT_DIR$/static/img/icon/card_pass_coupon.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/card_pass_coupon_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/card_pass_coupon_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/compensate_management.png" afterPath="$PROJECT_DIR$/static/img/icon/compensate_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/compensate_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/compensate_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/constraint.png" afterPath="$PROJECT_DIR$/static/img/icon/constraint.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/constraint_management.png" afterPath="$PROJECT_DIR$/static/img/icon/constraint_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/constraint_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/constraint_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/constraint_rule_type.png" afterPath="$PROJECT_DIR$/static/img/icon/constraint_rule_type.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/constraint_rule_type_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/constraint_rule_type_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/constraint_seleciton.png" afterPath="$PROJECT_DIR$/static/img/icon/constraint_seleciton.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/count.png" afterPath="$PROJECT_DIR$/static/img/icon/count.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/count_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/count_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/coupon.png" afterPath="$PROJECT_DIR$/static/img/icon/coupon.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/coupon_log.png" afterPath="$PROJECT_DIR$/static/img/icon/coupon_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/coupon_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/coupon_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/coupon_pool_management.png" afterPath="$PROJECT_DIR$/static/img/icon/coupon_pool_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/coupon_pool_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/coupon_pool_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/coupon_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/coupon_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/get_prize_count.png" afterPath="$PROJECT_DIR$/static/img/icon/get_prize_count.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/get_prize_count_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/get_prize_count_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/get_prize_record.png" afterPath="$PROJECT_DIR$/static/img/icon/get_prize_record.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/get_prize_record_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/get_prize_record_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_log.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_task_count.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_task_count.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_task_count_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_task_count_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_task_log.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_task_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_task_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_task_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_vip_task_log.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_vip_task_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/handle_vip_task_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/handle_vip_task_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/home.png" afterPath="$PROJECT_DIR$/static/img/icon/home.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/home_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/home_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/log.png" afterPath="$PROJECT_DIR$/static/img/icon/log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/new_log.png" afterPath="$PROJECT_DIR$/static/img/icon/new_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/new_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/new_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/prize.png" afterPath="$PROJECT_DIR$/static/img/icon/prize.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/prize_pool_management.png" afterPath="$PROJECT_DIR$/static/img/icon/prize_pool_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/prize_pool_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/prize_pool_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/prize_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/prize_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/prize_type.png" afterPath="$PROJECT_DIR$/static/img/icon/prize_type.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/prize_type_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/prize_type_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/project_management.png" afterPath="$PROJECT_DIR$/static/img/icon/project_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/project_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/project_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/promotion_management.png" afterPath="$PROJECT_DIR$/static/img/icon/promotion_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/promotion_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/promotion_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/qrcode_coupon.png" afterPath="$PROJECT_DIR$/static/img/icon/qrcode_coupon.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/qrcode_coupon_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/qrcode_coupon_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/real_prize_record.png" afterPath="$PROJECT_DIR$/static/img/icon/real_prize_record.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/real_prize_record_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/real_prize_record_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/scene_management.png" afterPath="$PROJECT_DIR$/static/img/icon/scene_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/scene_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/scene_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/sign.png" afterPath="$PROJECT_DIR$/static/img/icon/sign.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/sign_management.png" afterPath="$PROJECT_DIR$/static/img/icon/sign_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/sign_timing.png" afterPath="$PROJECT_DIR$/static/img/icon/sign_timing.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/site_log.png" afterPath="$PROJECT_DIR$/static/img/icon/site_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/site_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/site_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/star_log.png" afterPath="$PROJECT_DIR$/static/img/icon/star_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/star_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/star_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/task.png" afterPath="$PROJECT_DIR$/static/img/icon/task.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/task_management.png" afterPath="$PROJECT_DIR$/static/img/icon/task_management.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/task_management_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/task_management_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/task_rule.png" afterPath="$PROJECT_DIR$/static/img/icon/task_rule.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/task_rule_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/task_rule_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/task_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/task_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/userinfo.png" afterPath="$PROJECT_DIR$/static/img/icon/userinfo.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/userinfo_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/userinfo_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/vip_log.png" afterPath="$PROJECT_DIR$/static/img/icon/vip_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/vip_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/vip_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/yunzuan_log.png" afterPath="$PROJECT_DIR$/static/img/icon/yunzuan_log.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/icon/yunzuan_log_selection.png" afterPath="$PROJECT_DIR$/static/img/icon/yunzuan_log_selection.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/loginPic.jpg" afterPath="$PROJECT_DIR$/static/img/loginPic.jpg" />
-      <change beforePath="$PROJECT_DIR$/static/img/logo.png" afterPath="$PROJECT_DIR$/static/img/logo.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer1.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer1.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer10.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer10.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer2.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer2.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer3.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer3.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer4.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer4.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer5.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer5.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer6.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer6.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer7.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer7.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer8.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer8.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pic/myjobdeer9.png" afterPath="$PROJECT_DIR$/static/img/pic/myjobdeer9.png" />
-      <change beforePath="$PROJECT_DIR$/static/img/pp.png" afterPath="$PROJECT_DIR$/static/img/pp.png" />
-      <change beforePath="$PROJECT_DIR$/static/style/index.less" afterPath="$PROJECT_DIR$/static/style/index.less" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/custom-assertions/elementCount.js" afterPath="$PROJECT_DIR$/test/e2e/custom-assertions/elementCount.js" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/nightwatch.conf.js" afterPath="$PROJECT_DIR$/test/e2e/nightwatch.conf.js" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/reports/CHROME_71.0.3578.98_Windows NT_test.xml" afterPath="$PROJECT_DIR$/test/e2e/reports/CHROME_71.0.3578.98_Windows NT_test.xml" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/runner.js" afterPath="$PROJECT_DIR$/test/e2e/runner.js" />
-      <change beforePath="$PROJECT_DIR$/test/e2e/specs/test.js" afterPath="$PROJECT_DIR$/test/e2e/specs/test.js" />
-      <change beforePath="$PROJECT_DIR$/test/unit/.eslintrc" afterPath="$PROJECT_DIR$/test/unit/.eslintrc" />
-      <change beforePath="$PROJECT_DIR$/test/unit/jest.conf.js" afterPath="$PROJECT_DIR$/test/unit/jest.conf.js" />
-      <change beforePath="$PROJECT_DIR$/test/unit/setup.js" afterPath="$PROJECT_DIR$/test/unit/setup.js" />
-      <change beforePath="$PROJECT_DIR$/test/unit/specs/HelloWorld.spec.js" afterPath="$PROJECT_DIR$/test/unit/specs/HelloWorld.spec.js" />
+    <list default="true" id="70f867db-7a75-4f91-ac2b-a1f594be4439" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -185,30 +16,40 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/App.vue">
+      <file leaf-file-name="TaskManagement.vue" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/Task/TaskManagement.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Home.vue" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="221">
+              <caret line="269" column="41" selection-start-line="269" selection-start-column="30" selection-end-line="269" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>projectName</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/.postcssrc.js" />
+        <option value="$PROJECT_DIR$/src/components/Home.vue" />
+      </list>
+    </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
@@ -221,28 +62,22 @@
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths>
+      <path value="$PROJECT_DIR$/package.json" />
+    </packageJsonPaths>
+  </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="27" />
-    <option name="y" value="48" />
-    <option name="width" value="1369" />
-    <option name="height" value="990" />
+    <option name="x" value="463" />
+    <option name="y" value="112" />
+    <option name="width" value="1219" />
+    <option name="height" value="853" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1">
-      <flattenPackages />
-      <showMembers />
-      <showModules />
-      <showLibraryContents />
-      <hideEmptyPackages />
-      <abbreviatePackageNames />
-      <autoscrollToSource />
-      <autoscrollFromSource />
-      <sortByType />
-      <manualOrder />
+    <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -262,6 +97,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="backstage" type="b2602c69:ProjectViewProjectNode" />
+              <item name="backstage" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="Task" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -269,11 +111,11 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="settings.editor.selected.configurable" value="configurable.group.tools" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="prettierjs.PrettierConfiguration.Package" value="D:\backstage\node_modules\prettier" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -287,47 +129,44 @@
       </list>
     </option>
   </component>
-  <component name="ShelveChangesManager" show_recycled="false">
-    <option name="remove_strategy" value="false" />
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0765914f-dee8-47fd-8612-2452edc258af" name="Default" comment="" />
-      <created>1554005267316</created>
+      <changelist id="70f867db-7a75-4f91-ac2b-a1f594be4439" name="Default" comment="" />
+      <created>1554005365859</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1554005267316</updated>
-      <workItem from="1554005269453" duration="1374000" />
+      <updated>1554005365859</updated>
+      <workItem from="1554005367227" duration="3419000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1374000" />
+    <option name="totallyTimeSpent" value="3419000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="27" y="48" width="1369" height="990" extended-state="0" />
+    <frame x="463" y="112" width="1219" height="853" extended-state="1" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24925816" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32960895" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22015241" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info id="npm" side_tool="true" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.1162465" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,32 +175,59 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager />
-    <watches-manager />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/.postcssrc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="15" column="3" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="3" />
-          <folding />
+        <state>
+          <caret selection-end-line="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/selenium-debug.log">
+    <entry file="file://$PROJECT_DIR$/src/router/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="-8249">
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-760">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#140#161#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Home.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="79">
+          <caret line="200" column="25" lean-forward="true" selection-start-line="200" selection-start-column="25" selection-end-line="200" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ClearRedis.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="6" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1027" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Task/TaskManagement.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="269" column="41" selection-start-line="269" selection-start-column="30" selection-end-line="269" selection-end-column="41" />
         </state>
       </provider>
     </entry>
