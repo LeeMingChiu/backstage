@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>任务系统管理后台(PPMS)</title>
+  <style type="text/css">
+    #modalContainer {
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    #iframeLogin {
+      width: 450px;
+      height: 300px;
+      top: 50%;
+      left: 50%;
+      margin-left: -225px;
+      margin-top: -150px;
+    }
+  </style>
+  <script src="http://code.jquery.com/jquery-1.12.4.min.js"
+          integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<!--  <script type="text/javascript">
+    var passport_config = {
+      base: "/",
+      loginTheme: "soa_pop"
+    };
+  </script>-->
+  <!--<script type="text/javascript" src="https://ssositres.cnsuning.com/passport/passport.js"></script>-->
+</head>
+<body>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
+<script type="text/javascript">
+  function timer(n, fn) {
+    if (n > 0) {
+      setTimeout(function () {
+        fn(n, fn);
+      }, 1000);
+    }
+  }
+  function checkIframe () {
+    window.timer(10, function (n, fn) {
+      var iframe = document.getElementById('iframeLogin');
+      if (iframe) {
+        window.timer(9999999999, function (n, fn) {
+          if (window.location.href.indexOf('loginSuccess') !== -1) {
+            $('#modalOverlay').hide();
+            $('#modalContainer').hide();
+            $('#iframeLogin').hide();
+          } else {
+            timer(--n, fn);
+          }
+        })
+      } else {
+        timer(--n, fn);
+      }
+    });
+  }
+  window.timer = timer;
+  window.checkIframe = checkIframe;
+</script>
+</html>
