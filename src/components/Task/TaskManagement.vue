@@ -203,7 +203,8 @@
             </div>
             <div slot="footer" style="text-align: center">
                 <Button type="error" @click="showModal = false">取消</Button>
-                <Button type="success" @click="confirm" :loading="refreshCount !== 5">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>
+                <!--<Button type="success" @click="confirm" :loading="refreshCount !== 5">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>-->
+                <Button type="success" @click="confirm">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>
             </div>
         </Modal>
     </div>
@@ -1178,7 +1179,7 @@
                     })
                 }
 
-                if ((type === 'promotion') || (type === 'all')) {
+                /*if ((type === 'promotion') || (type === 'all')) {
                     if (type === 'promotion') {
                         _this.selectionItem.salePromotionId = null;
                     }
@@ -1209,7 +1210,7 @@
                             _this.$Spin.hide();
                         }
                     })
-                }
+                }*/
 
                 if ((type === 'constraint') || (type === 'all')) {
                     if (type === 'constraint') {
