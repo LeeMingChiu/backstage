@@ -930,8 +930,7 @@
                 });
                 _this.selectionItem.publishTime = new Date(_this.selectionItem.publishTimeFormat).getTime();
                 _this.selectionItem.downTime = new Date(_this.selectionItem.downTimeFormat).getTime();
-                //return //console.log(_this.selectionItem);
-                /*if (!_this.selectionItem.sceneId) {
+                if (!_this.selectionItem.sceneId) {
                     return _this.$Message.warning({
                         content: '场景不能为空',
                         duration: 3
@@ -955,12 +954,12 @@
                         duration: 3
                     });
                 }
-                /!*if (!_this.selectionItem.salePromotionId) {
+                /*if (!_this.selectionItem.salePromotionId) {
                     return _this.$Message.warning({
                         content: '促销不能为空',
                         duration: 3
                     });
-                }*!/
+                }*/
                 if (!_this.selectionItem.name) {
                     return _this.$Message.warning({
                         content: '任务名称不能为空',
@@ -1028,7 +1027,8 @@
                         content: '选择短信通知后内容不能为空',
                         duration: 3
                     });
-                }*/
+                }
+                console.log(_this.selectionItem)
                 _this.$Spin.show();
                 api.post('save_task', null, _this.selectionItem).then(res => {
                     //console.log(res);

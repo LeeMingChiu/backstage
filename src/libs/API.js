@@ -31,8 +31,8 @@ let config = {
 
     //任务模块
     query_task_list: 'index/task/query/',//任务列表
-    query_task_detail: 'task/admin/showDetail.do',//任务详情
-    switch_task_state: 'task/admin/state.do',//切换任务开关状态
+    query_task_detail: 'index/task/detail/',//任务详情
+    switch_task_state: 'index/task/state/',//切换任务开关状态
     save_task: 'index/new_task/',//新建/更新任务
     delete_task_img: 'task/admin/delImage.do',//删除任务图片
     query_task_rule: 'task/admin/get/activityRule.do',//获取任务规则
