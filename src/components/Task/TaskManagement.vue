@@ -203,8 +203,7 @@
             </div>
             <div slot="footer" style="text-align: center">
                 <Button type="error" @click="showModal = false">取消</Button>
-                <!--<Button type="success" @click="confirm" :loading="refreshCount !== 5">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>-->
-                <Button type="success" @click="confirm">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>
+                <Button type="success" @click="confirm" :loading="refreshCount !== 4">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>
             </div>
         </Modal>
     </div>
