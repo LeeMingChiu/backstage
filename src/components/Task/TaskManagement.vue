@@ -733,6 +733,7 @@
                         imageUrl: {},
                         platformBean: {}
                     };
+                    console.log(_this.selectionItem.goUrl)
                     _this.urlList = [
                         {
                             type: 0,
@@ -883,6 +884,7 @@
                             item.disabled = false;
                         }
                     });
+
                     if (!_this.urlList.length) {
                         _this.urlList = [
                             {
@@ -905,14 +907,37 @@
                 const _this = this;
                 let publish_platform_flag = true;
                 let list = {};
+                console.log(_this.selectionItem.goUrl);
+                console.log(_this.urlList);
                 _this.urlList.forEach(item => {
                     if (item.type || (item.type === 0)) {
                         list[_this.typeList[item.type].type] = item.url;
                     }
                 });
-                for (let type in _this.selectionItem.goUrl) {
-                    _this.selectionItem.goUrl[type] = list[type] || '';
+                console.log(list);
+                let goUrl = {
+                  apd:'',
+                  aph: '',
+                  atv: '',
+                  box: '',
+                  clt: '',
+                  flp: '',
+                  ipd: '',
+                  iph: '',
+                  mac: '',
+                  misc: '',
+                  wap: '',
+                  web: '',
+                  wpd: '',
+                  wph: ''
                 }
+                console.log(_this.selectionItem.goUrl)
+                for (let type in goUrl) {
+                    goUrl[type] = list[type] || '';
+                }
+                console.log(goUrl)
+                // TO DO this
+              _this.selectionItem.goUrl=goUrl;
                 _this.typeList.forEach(item => {
                     _this.selectionItem.goUrl[item.type] = _this.selectionItem.goUrl[item.type] || '';
                 });
@@ -929,7 +954,6 @@
                 });
                 _this.selectionItem.publishTime = new Date(_this.selectionItem.publishTimeFormat).getTime();
                 _this.selectionItem.downTime = new Date(_this.selectionItem.downTimeFormat).getTime();
-                //return //console.log(_this.selectionItem);
                 if (!_this.selectionItem.sceneId) {
                     return _this.$Message.warning({
                         content: '场景不能为空',
@@ -1030,12 +1054,10 @@
                 }
                 _this.$Spin.show();
                 api.post('save_task', null, _this.selectionItem).then(res => {
-                    //console.log(res);
                     _this.showModal = false;
                     _this.$Spin.hide();
                     _this.query_task_list();
                 }).catch(err => {
-                    //console.error(err);
                     _this.$Spin.hide();
                     _this.$Message.error({
                         content: err.message || (_this.selectionItem.id ? '修改任务失败' : '新建任务失败'),
