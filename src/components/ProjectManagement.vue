@@ -214,6 +214,7 @@
                                     on: {
                                         click: () => {
                                             this.selectionItem = JSON.parse(JSON.stringify(params.row));
+                                            console.log(this.selectionItem)
                                             this.handleProject('update');
                                         }
                                     }
@@ -762,11 +763,28 @@
             confirm() {
                 const _this = this;
                 let list = {};
+              let goUrl = {
+                apd:'',
+                aph: '',
+                atv: '',
+                box: '',
+                clt: '',
+                flp: '',
+                ipd: '',
+                iph: '',
+                mac: '',
+                misc: '',
+                wap: '',
+                web: '',
+                wpd: '',
+                wph: ''
+              }
                 _this.urlList.forEach(item => {
                     if (item.type || (item.type === 0)) {
                         list[_this.typeList[item.type].type] = item.url;
                     }
                 });
+              console.log(list)
                 for (let type in _this.selectionItem.goUrlBean) {
                     if (_this.selectionItem.goUrlBean.hasOwnProperty(type)) {
                         _this.selectionItem.goUrlBean[type] = _this.selectionItem.buttonLabel1 ? (list[type] || '') : '';
@@ -775,6 +793,11 @@
                 _this.typeList.forEach(item => {
                     _this.selectionItem.goUrlBean[item.type] = _this.selectionItem.goUrlBean[item.type] || '';
                 });
+                for (let type in goUrl) {
+                  goUrl[type] = list[type] || '';
+                }
+              _this.selectionItem.goUrlBean = goUrl;
+                console.log(_this.selectionItem.goUrlBean)
                 _this.imageUrlList.forEach((item, index) => {
                     //_this.selectionItem.imageUrl[item.type] = item.url;
                     _this.selectionItem['image' + (index + 1)] = item.file;
@@ -782,7 +805,7 @@
                 _this.selectionItem.publishTime = new Date(_this.selectionItem.publishTimeFormat).getTime();
                 _this.selectionItem.downTime = new Date(_this.selectionItem.downTimeFormat).getTime();
                 //return //console.log(_this.selectionItem);
-                if (!_this.selectionItem.name) {
+               /* if (!_this.selectionItem.name) {
                     return _this.$Message.warning({
                         content: '项目名称不能为空',
                         duration: 3
@@ -817,7 +840,7 @@
                         content: '展示顺序为必填',
                         duration: 3
                     });
-                }
+                }*/
                 _this.$Spin.show();
                 api.post('save_project', null, _this.selectionItem).then(res => {
                     //console.log(res);

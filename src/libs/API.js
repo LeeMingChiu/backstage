@@ -11,8 +11,8 @@ let config = {
   url: {
     get_token:'index/token',
     //场景模块
-    query_scene_list: 'scene/admin/query.do',//场景列表
-    save_scene: 'scene/admin/save.do',//场景更新
+    query_scene_list: 'index/scense/all/',//场景列表
+    save_scene: 'index/scense/detail/',//场景更新
     query_scene_id_and_name: 'index/scenes/query/',//获取场景的ID和name
 
 
@@ -20,10 +20,10 @@ let config = {
     register:'index/register/',
 
     //项目模块
-    query_project_list: 'project/admin/query.do',//项目列表
-    save_project: 'project/admin/save.do',//项目更新
+    query_project_list: 'index/project/all/',//项目列表
+    save_project: 'index/new_project/',//项目更新
     delete_project_img: 'project/admin/delImage.do',//删除任务图片
-    switch_project_state: 'project/admin/updateState.do',//项目上下线
+    switch_project_state: 'index/project/state/',//项目上下线
     query_project_id_and_name: 'index/project/query/',//获取项目ID和name
 
     //用户信息模块
@@ -53,12 +53,12 @@ let config = {
     query_constraint_rule_id_name: 'index/cons/query/',//查询约束规则列表
 
     //券池管理
-    query_coupon_pool_list: 'coupon/pool/query.do',//券池列表
+    query_coupon_pool_list: 'index/coupon/pool/all/',//券池列表
     save_coupon_pool: 'coupon/pool/save.do',//创建/更新券池
     import_coupon_pool_string: 'coupon/pool/string.do',//导入卡密信息
     import_coupon_pool_qrcode: 'coupon/pool/qrcode.do',//导入二维码信息
     query_surplus_coupon_pool: 'coupon/pool/remainderNum.do',//查询券池剩余数量
-    download_template: 'coupon/pool/download.do',//下载模板
+    download_template: 'index/pool/download/',//下载模板
     query_prizePool_id_and_name: 'index/prize/query/',//查询奖品池的ID和name
     coupon_card_list: 'coupon/string/query.do',//卡密优惠券
     coupon_qrcode_list: 'coupon/qrcode/query.do',//二维码优惠券
@@ -78,7 +78,7 @@ let config = {
     delete_qrcode_coupon: 'coupon/qrcode/remove.do',//删除二维码优惠券
     query_string_coupon: 'coupon/string/query.do',//卡密优惠券列表
     delete_string_coupon: 'coupon/string/remove.do',//删除卡密优惠券
-    add_pool_coupon: 'coupon/pool/add.do',//新增券池
+    add_pool_coupon: 'index/new_coupon/pool/',//新增券池
 
     //奖品失败补偿调用模块
     query_fail_list: 'prize/failLog/query.do',//奖品失败补偿调用列表
@@ -100,7 +100,7 @@ let config = {
     get_prize_record: 'prize/record/query.do', // 领奖记录管理列表
     export_prize_real: 'prize/real/export.do', // 导出
     updated_prize_real_mobileNum: 'prize/real/passportMobileNum.do', // 同步
-    get_prize_type_idAndName: "prize/type/idAndName.do",// 奖品类型
+    get_prize_type_idAndName: "index/pooltype/query/",// 奖品类型
     get_pool_type: "coupon/pool/idAndName.do",// 券池类型
     delete_prize_pool_img: 'prize/pool/delPoolImage.do',//删除奖品池图片
     delete_prize_item_img: 'prize/pool/delItemImage.do',//删除奖品项图片

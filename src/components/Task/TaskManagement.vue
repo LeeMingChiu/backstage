@@ -931,7 +931,6 @@
                   wpd: '',
                   wph: ''
                 }
-                console.log(_this.selectionItem.goUrl)
                 for (let type in goUrl) {
                     goUrl[type] = list[type] || '';
                 }
