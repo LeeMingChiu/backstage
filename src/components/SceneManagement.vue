@@ -26,7 +26,7 @@
                 </p>
                 <p>
                     <span>密钥</span>
-                    <Input v-model="selectionItem.secret" clearable placeholder="密钥 - 只能是32位字符" :maxlength="32" style="width: 300px;"/>
+                    <Input v-model="selectionItem.secret" clearable placeholder="密钥 - 只能是10位字符" :maxlength="10" style="width: 300px;"/>
                 </p>
             </div>
             <div slot="footer" style="text-align: center">
@@ -142,7 +142,7 @@
             },
             confirm() {
                 const _this = this;
-                if (_this.selectionItem.secret && (_this.selectionItem.secret.length !== 32)) {
+                /*if (_this.selectionItem.secret && (_this.selectionItem.secret.length !== 10)) {
                     return _this.$Message.error({
                         content: '密钥长度只能是32位',
                         duration: 3
@@ -153,7 +153,7 @@
                         content: '密钥中不能包含*',
                         duration: 3
                     });
-                }
+                }*/
                 _this.$Spin.show();
                 api.post('save_scene', null, _this.selectionItem).then(res => {
                     //console.log(res);

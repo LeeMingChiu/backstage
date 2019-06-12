@@ -56,12 +56,12 @@
                     <Icon style="font-size: 25px; cursor: pointer; position: relative; top: 1px;" type="ios-refresh" @click="refreshList('prizePool')"/>
                     <Icon style="font-size: 20px; cursor: pointer" type="ios-add-circle-outline" @click="addNew('prizePool')"/>
 
-                    <!--<span style="margin-left: 56px; width: 82px">&lt;!&ndash;<span style="color: red; width: 5px; position: relative; top: 2px;">*</span>&ndash;&gt; 选择促销</span>
+                    <span style="margin-left: 56px; width: 82px"><!--<span style="color: red; width: 5px; position: relative; top: 2px;">*</span>--> 选择促销</span>
                     <Select v-model="selectionItem.salePromotionId" style="width: 200px" clearable>
                         <Option v-for="item in promotionList" :value="item.value" :key="item.value">{{ item.label }}</Option>
-                    </Select>-->
-                    <!--<Icon style="font-size: 25px; cursor: pointer; position: relative; top: 1px;" type="ios-refresh" @click="refreshList('promotion')"/>
-                    <Icon style="font-size: 20px; cursor: pointer" type="ios-add-circle-outline" @click="addNew('promotion')"/>-->
+                    </Select>
+                    <Icon style="font-size: 25px; cursor: pointer; position: relative; top: 1px;" type="ios-refresh" @click="refreshList('promotion')"/>
+                    <Icon style="font-size: 20px; cursor: pointer" type="ios-add-circle-outline" @click="addNew('promotion')"/>
                 </p>
                 <p>
                     <span><span style="color: red; width: 5px; position: relative; top: 2px;">*</span> 任务名称</span>
@@ -172,7 +172,7 @@
                         <Option v-for="(item, index) in typeList" :value="item.value" :key="100 - index">{{ item.label }}</Option>
                     </Select>
                 </p>-->
-                <p style="font-size: 14px;">(去完成)跳转地址: <span style="color: red; width: 600px; font-size: 12px;"><!--（注：如果需要打开站外APP，请填写：外部路由地址$$$正常跳转地址，优先打开外部路由地址）--></span>
+                <p style="font-size: 14px;">(去完成)跳转地址: <span style="color: red; width: 600px; font-size: 12px;">（注：如果需要打开站外APP，请填写：外部路由地址$$$正常跳转地址，优先打开外部路由地址）</span>
                 </p>
                 <p v-for="(item, index) in urlList" :key="index + 200">
                     <Select v-model="item.type" style="width: 200px" @on-change="updateGoUrl">
@@ -203,8 +203,7 @@
             </div>
             <div slot="footer" style="text-align: center">
                 <Button type="error" @click="showModal = false">取消</Button>
-                <Button type="success" @click="confirm">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>
-              <!--<Button type="success" @click="confirm" :loading="refreshCount !== 5">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>-->
+                <Button type="success" @click="confirm" :loading="refreshCount !== 4">{{(selectionItem && selectionItem.id) ? '修改' : '新建'}}</Button>
             </div>
         </Modal>
     </div>
@@ -226,7 +225,7 @@
                 projectList: [],
                 sceneList: [],
                 prizePoolList: [],
-             /*   constraintList: [],*/
+                constraintList: [],
                 promotionList: [],
                 onOff: null,
                 onOffList: [
@@ -385,9 +384,9 @@
                     siteMessageTitle: null,
                     siteMessage: null,
                     sceneId: null,
-               /*     constraintId: null,*/
+                    constraintId: null,
                     projectId: null,
-                   /* salePromotionId: null,*/
+                    salePromotionId: null,
                     prizePoolId: null,
                     displayOrder: null,
                     buttonLabel1: null,
@@ -395,7 +394,7 @@
                     buttonLabel3: null,
                     buttonLabel4: null,
                     buttonLabel5: null,
-/*                    autoSendPrize: null,*/
+                    autoSendPrize: null,
                     goUrl: {},
                     imageUrl: {},
                     platformBean: {}
@@ -670,7 +669,7 @@
                 };
                 _this.tableLoading = true;
                 api.post('query_task_list', null, params).then(res => {
-                    console.log(res);
+                    //console.log(res);
                     res.data.rows = res.data.rows.map((item, index) => {
                         item.serialNum = _this.pageSize * (_this.page - 1) + index + 1;
                         item.onOffFormat = item.onOff ? '开' : '关';
@@ -727,13 +726,14 @@
                         buttonLabel1: null,
                         buttonLabel2: null,
                         buttonLabel3: null,
-                       /* buttonLabel4: null,*/
-                       /* buttonLabel5: null,*/
+                        buttonLabel4: null,
+                        buttonLabel5: null,
                         autoSendPrize: null,
                         goUrl: {},
                         imageUrl: {},
                         platformBean: {}
                     };
+                    console.log(_this.selectionItem.goUrl)
                     _this.urlList = [
                         {
                             type: 0,
@@ -884,6 +884,7 @@
                             item.disabled = false;
                         }
                     });
+
                     if (!_this.urlList.length) {
                         _this.urlList = [
                             {
@@ -906,14 +907,36 @@
                 const _this = this;
                 let publish_platform_flag = true;
                 let list = {};
+                console.log(_this.selectionItem.goUrl);
+                console.log(_this.urlList);
                 _this.urlList.forEach(item => {
                     if (item.type || (item.type === 0)) {
                         list[_this.typeList[item.type].type] = item.url;
                     }
                 });
-                for (let type in _this.selectionItem.goUrl) {
-                    _this.selectionItem.goUrl[type] = list[type] || '';
+                console.log(list);
+                let goUrl = {
+                  apd:'',
+                  aph: '',
+                  atv: '',
+                  box: '',
+                  clt: '',
+                  flp: '',
+                  ipd: '',
+                  iph: '',
+                  mac: '',
+                  misc: '',
+                  wap: '',
+                  web: '',
+                  wpd: '',
+                  wph: ''
                 }
+                for (let type in goUrl) {
+                    goUrl[type] = list[type] || '';
+                }
+                console.log(goUrl)
+                // TO DO this
+              _this.selectionItem.goUrl=goUrl;
                 _this.typeList.forEach(item => {
                     _this.selectionItem.goUrl[item.type] = _this.selectionItem.goUrl[item.type] || '';
                 });
@@ -930,8 +953,7 @@
                 });
                 _this.selectionItem.publishTime = new Date(_this.selectionItem.publishTimeFormat).getTime();
                 _this.selectionItem.downTime = new Date(_this.selectionItem.downTimeFormat).getTime();
-                //return //console.log(_this.selectionItem);
-                /*if (!_this.selectionItem.sceneId) {
+                if (!_this.selectionItem.sceneId) {
                     return _this.$Message.warning({
                         content: '场景不能为空',
                         duration: 3
@@ -955,12 +977,12 @@
                         duration: 3
                     });
                 }
-                /!*if (!_this.selectionItem.salePromotionId) {
+                /*if (!_this.selectionItem.salePromotionId) {
                     return _this.$Message.warning({
                         content: '促销不能为空',
                         duration: 3
                     });
-                }*!/
+                }*/
                 if (!_this.selectionItem.name) {
                     return _this.$Message.warning({
                         content: '任务名称不能为空',
@@ -1028,15 +1050,13 @@
                         content: '选择短信通知后内容不能为空',
                         duration: 3
                     });
-                }*/
+                }
                 _this.$Spin.show();
                 api.post('save_task', null, _this.selectionItem).then(res => {
-                    //console.log(res);
                     _this.showModal = false;
                     _this.$Spin.hide();
                     _this.query_task_list();
                 }).catch(err => {
-                    //console.error(err);
                     _this.$Spin.hide();
                     _this.$Message.error({
                         content: err.message || (_this.selectionItem.id ? '修改任务失败' : '新建任务失败'),
@@ -1119,7 +1139,6 @@
                     }
                     api.get('query_scene_id_and_name').then(res => {
                         _this.sceneList = [];
-                        console.log(res.data)
                         res.data.forEach(item => {
                             _this.sceneList.push({
                                 label: item.name,
@@ -1180,11 +1199,11 @@
                     })
                 }
 
-                if ((type === 'promotion') || (type === 'all')) {
+                /*if ((type === 'promotion') || (type === 'all')) {
                     if (type === 'promotion') {
                         _this.selectionItem.salePromotionId = null;
                     }
-                    /*api.get('query_task_promotion_id_and_name').then(res => {
+                    api.get('query_task_promotion_id_and_name').then(res => {
                         _this.promotionList = [];
                         res.data.forEach(item => {
                             _this.promotionList.push({
@@ -1210,8 +1229,8 @@
                         if (type !== 'all') {
                             _this.$Spin.hide();
                         }
-                    })*/
-                }
+                    })
+                }*/
 
                 if ((type === 'constraint') || (type === 'all')) {
                     if (type === 'constraint') {

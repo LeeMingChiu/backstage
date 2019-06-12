@@ -365,6 +365,7 @@
             fixed:'right',
             align: 'left',
             render: (h, params) => { // params:{row:'当前单元格数据',column:'当前列数据',index:'当前是第几行'}
+
               return h('div',[
                 h('Button', {
                   props: {
@@ -529,7 +530,7 @@
           params.endTime = new Date().getTime();
         }
         let validatorStr = '';
-        if(params.prizeType === '') {
+        /*if(params.prizeType === '') {
           _this.$Spin.hide();
           validatorStr = '券池类型不能为空';
           return _this.$Message.error({
@@ -592,11 +593,11 @@
             content:validatorStr,
             duration: 3
           })
-        }
+        }*/
         if(!validatorStr){ // validatorStr === ''
           api.post('add_pool_coupon',null,params)
               .then((res) => {
-                if(res.code === 200) {
+                console.log(res)
                   _this.time = '';
                   _this.$Spin.hide();
                   _this.showModal = false;
@@ -605,7 +606,6 @@
                     content: '操作成功',
                     duration: 3
                   });
-                }
               }).catch((err) => {
                 _this.$Spin.hide();
                 _this.$Message.error({
@@ -641,7 +641,6 @@
         const _this = this;
         api.post('query_surplus_coupon_pool',null,params)
             .then((res) => {
-              if(res.code ===  200) {
                 _this.message = res.message;
                 const data = res.data;
                 _this.count = data.count;
@@ -649,7 +648,6 @@
                   content: '剩余 ' + data.count + ' 条' || '数据查询成功',
                   duration: 3
                 });
-              }
             }).catch((err) => {
               this.$Message.error({
                 content: err.message || '数据查询失败',
@@ -659,7 +657,8 @@
       },
       // 模板下载
       downloadExcel(fileType){
-        window.open('/coupon/pool/download.do?fileType='+ fileType, '_self');
+        //window.open('/coupon/pool/download.do?fileType='+ fileType, '_self');
+        window.open('http://192.168.0.105:8000/index/pool/download/?fileType='+ fileType, '_self');
         /*api.get('/coupon/pool/download.do',fileType)
             .then((res) => {
               if(res.code === '200') {
@@ -705,23 +704,25 @@
         };
         api.post('query_coupon_pool_list', null, params).then(res => {
           _this.tableLoading = false;
-          if(res.code === 200) {
-            _this.tableLoading = false;
-            _this.message = res.message;
-            let rows = res.data.rows;
-            if(rows.length===0){
-              if(rows.length === 0){
-                _this.$Message.warning({
-                  content: '未查到相关数据',
-                  duration: 3
-                });
-              }
+          _this.message = res.message;
+          let rows = res.data.rows;
+
+
+          if(rows.length===0) {
+            if (rows.length === 0) {
+              _this.$Message.warning({
+                content: '未查到相关数据',
+                duration: 3
+              });
             }
-            rows = rows.map((item, index) => {
+          }
+
+          rows = rows.map((item, index) => {
               item.serialNum = _this.pageSize * (_this.page - 1) + index + 1;
               item.startTime= utils.dateFormat(item.startTime,'YYYY-MM-DD');
               item.endTime= utils.dateFormat(item.endTime,'YYYY-MM-DD');
               item.prizeType = _this.prizeTypeFormat(item.prizeType);
+              console.log(item.prizeType)
               if(item.prizeType === '购物津贴'){
                 item.startTime = '--';
                 item.endTime = '--';
@@ -730,9 +731,9 @@
               }
               return item;
             });
-            _this.rows = rows;
-            _this.total = res.data.total;
-          }
+
+          _this.rows = rows;
+          _this.total = res.data.total;
         }).catch(err => {
           this.$Message.error({
             content: err.message || '项目列表查询失败',
@@ -807,7 +808,7 @@
         let timeOut = 60 * 1000;
         api.post(_this.uploadUrl, null, form, timeOut)
             .then((res) => {
-              if(res.code === 200) {
+              if(res.code === 0) {
                 _this.loadingStatus = false;
                 const data = res.data;
                 _this.totalNum = data.totalNum;
@@ -822,7 +823,6 @@
                 _this.query_coupon_pool_list();
                 _this.fileList = [];
               } else {
-
                 _this.loadingStatus = false;
                 _this.fileList = [];
                 _this.$Message.error({
@@ -866,9 +866,8 @@
         _this.refshLoading = true;
         api.get('get_prize_type_idAndName')
             .then((res) => {
-              if(res.code === 200) {
-                this.backPrizeType = res.data;
-              }
+              console.log(res)
+              this.backPrizeType = res.data;
             }).catch((err) => {
           _this.$Message.error({
             content: err.message || '刷新失败',
